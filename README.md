@@ -1,6 +1,6 @@
 # Sunnyside Agency Landing Page Frontend Mentor Challenge (Not done yet)
 
-This project is a result of front-end mentor challenge that I made. I'm still working on responsive size for tab and mobile.
+This project is a result of front-end mentor challenge. I'm still working on responsive size for tab and mobile.
 
 This project is built with:
 
