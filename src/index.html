@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/jpg/png" href="/assets/favicon-32x32.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/08266d53b0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/dist/output.css">
+    <script src="/src/javascript.js"></script>
     <title>sunnyside</title>
 </head>
 <body>
@@ -17,46 +21,60 @@
     <div class="top-wrapper">
         <img src="/assets/desktop/image-header.jpg" class="relative" alt="">
 
-        <div class="container absolute inset-x-0 top-0 mx-auto mt-10">
-            <navbar class="flex justify-between items-center">
+        <div class="container absolute inset-x-0 top-0 mx-auto mt-10 md:px-8 laptop:px-0">
+            <navbar class="flex justify-between items-center laptop:px-4">
                 <div>
-                    <img src="../assets/logo.svg" class="w-40" alt="logo">
+                    <img src="../assets/logo.svg" class="md:w-36 laptop:w-40" alt="logo">
                 </div>
+
                 <ul class="flex">
                     <li>
-                        <a href="#" class="px-6 py-2 text-white text-base">About</a>
+                        <a href="#" class="px-6 py-2 text-white text-base">
+                            About
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="px-6 py-2 text-white text-base">Services</a>
+                        <a href="#" class="px-6 py-2 text-white text-base">
+                            Services
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="px-6 py-2 text-white text-base">Projects</a>
+                        <a href="#" class="px-6 py-2 text-white text-base">
+                            Projects
+                        </a>
                     </li>
                     <li>
-                        <a href="#" class="px-6 py-4 mx-4 bg-white rounded-full font-fraunces hover:text-white hover:bg-sky-300">CONTACT</a>
+                        <a href="#" class="px-6 py-4 mx-4 bg-white rounded-full font-fraunces hover:text-white hover:bg-sky-300">
+                            CONTACT
+                        </a>
                     </li>
                 </ul>
             </navbar>
         </div>
 
-        <div class="absolute mt-20 inset-x-0 top-20">
-            <h1 class="text-white text-center text-5xl font-fraunces tracking-widest">
+        <!-- TOP-HERO -->
+        <div class="absolute inset-x-0 top-20 md:mt-16 md:shrink-0 laptop:mt-20">
+            <h1 class="text-white text-center font-fraunces tracking-widest md:text-3xl laptop:text-5xl">
                 WE ARE CREATIVES
             </h1>
-            <img src="/assets/icon-arrow-down.svg" class="mx-auto mt-32" alt="arrow-down">
+            <img src="/assets/icon-arrow-down.svg" class="mx-auto md:mt-8 md:w-5 laptop:mt-28 laptop:w-10" alt="arrow-down">
         </div>
     </div>
 
+    <!-- CONTENT 1 -->
     <div class="content-wrapper flex items-center">
-        <div class="w-1/2 px-36">
-            <h2 class="font-fraunces text-4xl mb-7 text-verydark-greyblue" >Transfrom your brand</h2>
-            <p class="mb-7 text-verydarkgrayish-blue font-barlow" style="font-size: 18px;">
+        <div class="w-1/2 md:px-14 laptop:px-36">
+            <h2 class="font-fraunces text-verydark-greyblue md:text-2xl md:mb-3 laptop:text-4xl laptop:mb-7">
+                Transfrom your brand
+            </h2>
+            <p class="text-verydarkgrayish-blue font-barlow md:text-xs md:mb-3 laptop:mb-7 laptop:text-base" style="font-size: 18px;">
                 We are full-service creative agency specializing in helping brands grow fast. 
                 Engage your clients through compelling visuals that do most of marketing for you.
             </p>
-            <a class="font-fraunces text-verydark-greyblue text-lg underline decoration-yellow-200 decoration-8 hover:decoration-yellow-400" 
+            <a class="font-fraunces text-verydark-greyblue underline decoration-yellow-200 decoration-8 hover:decoration-yellow-400 md:text-base laptop:text-lg" 
             href="#">LEARN MORE</a>
         </div>
+
         <div class="w-1/2">
             <img src="/assets/desktop/image-transform.jpg" alt="">
         </div>
@@ -66,65 +84,97 @@
         <div class="w-1/2">
             <img src="/assets/desktop/image-stand-out.jpg" alt="">
         </div>
-        <div class="w-1/2 px-36">
-            <h2 class="font-fraunces text-4xl mb-7 text-verydark-greyblue" >Standout to the right audience</h2>
-            <p class="mb-7 text-verydarkgrayish-blue font-barlow" style="font-size: 18px;">
+
+        <div class="w-1/2 md:px-14 laptop:px-36">
+            <h2 class="font-fraunces text-verydark-greyblue md:text-2xl md:mb-3 laptop:text-4xl laptop:mb-7">
+                Standout to the right audience
+            </h2>
+            <p class="text-verydarkgrayish-blue font-barlow md:text-xs md:mb-3 laptop:mb-7 laptop:text-base" style="font-size: 18px;">
                 Using a collaborative formula of designers, researchers, photographers, videographers, and cpywriters, we'll build and extend your brand in digital places.
             </p>
-            <a class="font-fraunces text-verydark-greyblue text-lg underline decoration-red-200 decoration-8 hover:decoration-red-400" 
+            <a class="font-fraunces text-verydark-greyblue underline decoration-red-200 decoration-8 hover:decoration-red-400 md:text-base laptop:text-lg" 
             href="#">LEARN MORE</a>
         </div>
     </div>
 
+    <!-- CONTENT 2 -->
     <div class="content-wrapper flex items-center">
         <div class="w-1/2 relative">
             <img src="/assets/desktop/image-graphic-design.jpg" alt="graphic-design">
-            <div class="content-text w-full absolute bottom-20 py-38 px-40 text-center">
-                <h3 class="font-fraunces text-des-cyan text-3xl mb-8">Graphic Design</h3>
-                <p class="font-barlow text-des-cyan">Great design makes you memorable We deliver artwork that underscores your brand message and captures potential clients attention.</p>
+
+            <div class="content-text w-full absolute text-center md:px-14 md:py-0.5 md:bottom-5 laptop:px-36 laptop:py-38 laptop:bottom-20">
+                <h3 class="font-fraunces text-des-cyan md:text-2xl md:mb-3 laptop:text-3xl laptop:mb-8">
+                    Graphic Design
+                </h3>
+                <p class="font-barlow text-des-cyan md:text-xs md:mb-3 laptop:text-base" style="font-size: 18px;">
+                    Great design makes you memorable We deliver artwork that underscores your brand message and captures potential clients attention.
+                </p>
             </div>
         </div>
+
         <div class="w-1/2 relative">
             <img src="/assets/desktop/image-photography.jpg" alt="Photography">
-            <div class="content-text w-full absolute bottom-20 py-38 px-40 text-center">
-                <h3 class="font-fraunces text-dark-blue text-3xl mb-8">Photography</h3>
-                <p class="font-barlow text-dark-blue" style="font-size: 18px;">Increase your credibility by getting the most stunning, high-quality photos that improves your business image.</p>
+
+            <div class="content-text w-full absolute text-center md:px-14 md:py-0.5 md:bottom-5 laptop:px-36 laptop:py-38 laptop:bottom-20">
+                <h3 class="font-fraunces text-dark-blue md:text-2xl md:mb-3 laptop:text-3xl laptop:mb-8">
+                    Photography
+                </h3>
+                <p class="font-barlow text-dark-blue md:text-xs md:mb-3 laptop:text-base" style="font-size: 18px;">
+                    Increase your credibility by getting the most stunning, high-quality photos that improves your business image.
+                </p>
             </div>
         </div>
     </div>
 
+    <!-- TESTIMONIALS -->
     <div class="testimonials p-20">
         <div class="container mx-auto mt-4">
-            <h3 class="text-center font-fraunces text-2xl text-darkgrayish-blue mb-20 tracking-widest">CLIENT TESTIMONIALS</h3>
+            <!-- title -->
+            <h3 class="text-center font-fraunces text-2xl text-darkgrayish-blue mb-20 tracking-widest">
+                CLIENT TESTIMONIALS
+            </h3>
 
+            <!-- content testimonials -->
             <div class="card-tetimonials flex">
+                <!-- testimonial-1 -->
                 <div class="card-testimonial text-center p-4">
                     <div class="testimonial-content">
                         <img class="mx-auto rounded-full w-24 mb-10" src="/assets/image-emily.jpg" alt="emily">
-                        <p class="font-barlow text-verydarkgrayish-blue" style="font-size: 18px;">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                        <p class="font-barlow text-verydarkgrayish-blue" style="font-size: 18px;">
+                            We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                        </p>
                     </div>
+
                     <div class="testimonial-name mt-10">
                         <h2 class="font-fraunces text-verydark-greyblue">Emily R.</h2>
                         <p class="font-barlow mt-4 text-grayish-blue">Marketing Director</p>
                     </div>
                 </div>
-    
+                
+                <!-- testimonial-2 -->
                 <div class="card-testimonial text-center p-4">
                     <div class="testimonial-content">
                         <img class="mx-auto rounded-full w-24 mb-10" src="/assets/image-thomas.jpg" alt="thomas">
-                        <p class="font-barlow text-verydarkgrayish-blue" style="font-size: 18px;">Sunnyside's enthusiasion coupled with their keen interest in our brand's success made it a satisfying and enjoyable experince.</p>
+                        <p class="font-barlow text-verydarkgrayish-blue" style="font-size: 18px;">
+                            Sunnyside's enthusiasion coupled with their keen interest in our brand's success made it a satisfying and enjoyable experince.
+                        </p>
                     </div>
+
                     <div class="testimonial-name mt-10">
                         <h2 class="font-fraunces text-verydark-greyblue">Thomas S.</h2>
                         <p class="font-barlow mt-4 text-grayish-blue">Chief Operating Officer</p>
                     </div>
                 </div>
-    
+                
+                <!-- testimonial-3 -->
                 <div class="card-testimonial text-center p-4">
                     <div class="testimonial-content">
                         <img class="mx-auto rounded-full w-24 mb-10" src="/assets/image-jennie.jpg" alt="jennie">
-                        <p class="font-barlow text-verydarkgrayish-blue" style="font-size: 18px;" >Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highl recomended!</p>
+                        <p class="font-barlow text-verydarkgrayish-blue" style="font-size: 18px;">
+                            Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highl recomended!
+                        </p>
                     </div>
+
                     <div class="testimonial-name mt-10">
                         <h2 class="font-fraunces text-verydark-greyblue">Jennie F.</h2>
                         <p class="font-barlow mt-4 text-grayish-blue">Business Owner</p>
@@ -134,6 +184,7 @@
         </div>
     </div>
 
+    <!-- IMG-FOOTER -->
     <div class="img-footer flex">
         <div class="w-1/4">
             <img src="/assets/desktop/image-gallery-milkbottles.jpg" alt="milkbottles">
@@ -149,6 +200,7 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
     <div class="footer p-10 text-center bg-cyan-bgfooter">
         <div class="container mx-auto mt-4">
             <h4 class="font-barlow text-des-cyan text-4xl" style="font-weight:800;">sunnyside</h4>
@@ -165,5 +217,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
