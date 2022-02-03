@@ -21,6 +21,9 @@ module.exports = {
       },
       fontWeight: {
         'reallyextra-bold': 1000,
+      },
+      screens: {
+        'laptop': '1200px'
       }
     },
   },
